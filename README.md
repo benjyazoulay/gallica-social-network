@@ -5,10 +5,12 @@ Fondé sur l'exploitation des ressources numériques de la BnF (Gallica), cet ou
 
 Une option de l'algorithme permet de ne sonder que la chronique mondaine et révèle ainsi le cercle de mondanité fréquenté par l'intéressé.
 
+Le programme édite un nuage de noms ainsi qu'un histogramme lors de l'exécution de la fonction d'affichage.
+
 Un paramétrage des bornes chronologiques pour la période étudiée est possible.
 
 
-Pour utiliser ce programme : 
+## Pour utiliser ce programme : 
 
 1 : Ouvrez la page de recherche avancée de Gallica : https://gallica.bnf.fr/services/engine/search/advancedSearch/
 
