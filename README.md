@@ -1,5 +1,5 @@
 # gallica-social-network
-gallica-social-network est un outil de visualisation du réseau social d'un personnage public français des XIXe et XXe siècles.
+gallica-social-network est un outil de reconstitution et de visualisation du réseau social d'un personnage public français des XIXe et XXe siècles.
 
 Fondé sur l'exploitation des ressources numériques de la BnF (Gallica), cet outil effectue une recherche des noms propres situés à proximité de la mention du personnage étudié. Les noms les plus fréquemment associés au personnage étudié sont révélés par l'algorithme qui produit ensuite une visualisation graphique du réseau social reconstitué.
 
