@@ -34,3 +34,4 @@ Pour utiliser ce programme :
 
 12 : Veillez à effectuer un dernier nettoyage manuel des matrices avant l'execution de la fonction d'affichage. Cela permettra d'éliminer les résidus.
 
+![WC_réseau_1914_mondain_nettoye](https://user-images.githubusercontent.com/25954316/92419152-ec82a100-f16b-11ea-9910-f53ce9f73d97.png)
