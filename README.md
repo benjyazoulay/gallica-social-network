@@ -28,7 +28,7 @@ Pour utiliser ce programme :
 
 9 : Téléchargez le rapport de recherche en pièce jointe du mail que la BnF vous envoie automatiquement.
 
-10 : Déplacez ce fichier dans le dossier de votre projet r et renommez la "rapport.csv"
+10 : Déplacez ce fichier dans le dossier de votre projet r et renommez la "rapport.csv". Le fichier "rapport.csv" contenu dans ce repository est un exemple (rapport de la recherche "abel bonnard" dans le corpus de presse de Gallica). Remplacez le par votre propre rapport de recherche.
 
 11 : Vous pouvez utiliser l'algorithme : n'oubliez pas de rechercher et remplacer les mentions "abel bonnard" dans le code R par le nom que vous avez inscrit dans votre recherche Gallica. Veillez aussi à indiquer les bornes chronologiques de votre choix.
 
