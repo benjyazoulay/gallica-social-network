@@ -33,3 +33,4 @@ Pour utiliser ce programme :
 11 : Vous pouvez utiliser l'algorithme : n'oubliez pas de rechercher et remplacer les mentions "abel bonnard" dans le code R par le nom que vous avez inscrit dans votre recherche Gallica. Veillez aussi à indiquer les bornes chronologiques de votre choix.
 
 12 : Veillez à effectuer un dernier nettoyage manuel des matrices avant l'execution de la fonction d'affichage. Cela permettra d'éliminer les résidus.
+
