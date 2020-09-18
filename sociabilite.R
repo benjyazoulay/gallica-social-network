@@ -125,8 +125,6 @@ rapport$titre<-str_remove_all(rapport$titre,"\\[")
 rapport$titre[nchar(rapport$titre)>30]<-str_extract(rapport$titre[nchar(rapport$titre)>30],"..............................") 
 rapport<-rapport[order(rapport$date),]
 
-stopwprds <- read.csv("french_stopwords.txt")
-stopwprds <- unique(stopwprds)
 
 #####NETTOYAGE DU RAPPORT DE RECHERCHE ET PREPARATION DE LA MATRICE D'EXTRACTION
 
