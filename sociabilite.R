@@ -263,6 +263,7 @@ nettoyage("rapport_periode.csv")
 nettoyage("rapport_periode_mondain.csv")
 # A ce stade, il faut achever de nettoyer les csv manuellement. Les résidus sont très peu nombreux.
 # Il faut veiller à retirer le nom du personnage étudié
+# Il faut supprimer tous les résultats dont le nombre d'occurence est inférieur à un plancher défini par l'utilisateur afin de ne pas voir ces noms apparaitre dans les graphiques finaux.
 # Une fois le csv nettoyé sur excel, il faut supprimer la première colonne indiquant le numéro de ligne originel et enregistrer le fichier sur excel
 
 
