@@ -22,18 +22,14 @@ Un paramétrage des bornes chronologiques pour la période étudiée est possibl
 
 5 : Lancez la recherche.
 
-6 : Dans le bandeau de gauche cliquez sur l'onglet "exporter" puis cliquez sur "ok" sous la mention "générer votre rapport de recherche"
+6 : Copiez la "question" située dans l'url de recherche. Elle est située entre parenthèses dans l'URL après la mention query=(question) 
 
-7 : Dans la page qui s'ouvre cliquez sur "exporter" puis cochez la mention "DONNÉES BIBLIOGRAPHIQUES DE LA RECHERCHE - CSV" et sous "limite d'export du fichier", choisissez "60 000"
+7 : Copiez cette question dans le script R à l'endroit indiqué.
 
-8 : Inscrivez votre adresse e-mail dans le champ et cliquez sur "envoyer"
+8 : Remplacez les mentions "abel bonnard" dans le code R par le nom que vous avez inscrit dans votre recherche Gallica. Veillez aussi à indiquer les bornes chronologiques de votre choix.
 
-9 : Téléchargez le rapport de recherche en pièce jointe du mail que la BnF vous envoie automatiquement.
+9 : Lancez le script sans les fonctions d'affichage finales.
 
-10 : Déplacez ce fichier dans le dossier de votre projet r et renommez la "rapport.csv". Le fichier "rapport.csv" contenu dans ce repository est un exemple (rapport de la recherche "abel bonnard" dans le corpus de presse de Gallica). Remplacez le par votre propre rapport de recherche.
-
-11 : Vous pouvez utiliser l'algorithme : n'oubliez pas de rechercher et remplacer les mentions "abel bonnard" dans le code R par le nom que vous avez inscrit dans votre recherche Gallica. Veillez aussi à indiquer les bornes chronologiques de votre choix.
-
-12 : Veillez à effectuer un dernier nettoyage manuel des matrices avant l'execution de la fonction d'affichage. Cela permettra d'éliminer les résidus.
+10 : Veillez à effectuer un dernier nettoyage manuel des matrices sur excel avant l'execution de la fonction d'affichage. Cela permettra d'éliminer les résidus, notamment les noms de ville et de pays, le nom recherché (qui ne doit pas apparaitre dans le graphe) et quelques éléments non filtrés.
 
 ![WC_réseau_1914_mondain_nettoye](https://user-images.githubusercontent.com/25954316/92419152-ec82a100-f16b-11ea-9910-f53ce9f73d97.png)
