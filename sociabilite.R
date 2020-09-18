@@ -3,6 +3,7 @@ library(rvest)
 library(ggplot2)
 library(ggrepel)
 library(dplyr)
+library(plyr)
 library(tm)
 library(stm)
 library(wordcloud)
@@ -153,6 +154,7 @@ colnames(rapport2)<-c("title","text")
 rapport2<-as.data.frame(rapport2)
 rapport2<-subset(rapport2,is.na(rapport2$text)==FALSE)
 rapport2$title<-as.character(rapport2$title)
+rapport2$text<-str_replace_all(rapport2$text,"[:punct:]"," ")
 
 #####CHOIX DES PERIODES D'ETUDE
 
@@ -162,7 +164,7 @@ periode<-function(date_min,date_max)
   return(rapport_periode)
 }
 
-rapport_periode<-periode("19181111","19390901") #Choix des bornes chronologiques basses et hautes
+rapport_periode<-periode("19000101","19090301") #Choix des bornes chronologiques basses et hautes
 
 #####RESTRICTION AUX PERSONNALITES MONDAINES
 rapport_periode_mondain<-subset(rapport_periode,str_detect(rapport_periode$text,"comtesse|duchesse|princesse|marquise|baronne"))
@@ -187,19 +189,19 @@ colnames(prenoms)<-c("title")
 matrice<-function(rapport)
 {
   tidy_r <- rapport %>%
-    mutate(line = row_number()) %>%
-    unnest_tokens(word, text) %>%
-    anti_join(stopwprds)
+    unnest_tokens(word, text)
+  tidy_r$word<-str_replace(tidy_r$word,"[:punct:]","")
+  r_dfm<-as.data.frame(unique(tidy_r$word))
+  colnames(r_dfm)<-c("word")
+  r_dfm$n<-0
+  for (i in 1:length(r_dfm$word)) 
+  {
+    r_dfm$n[i]<-sum(as.numeric(tidy_r$word==r_dfm$word[i]))
+  }
+  r_dfm<-r_dfm[order(r_dfm$n,decreasing = TRUE),]
   
-  
-  r_dfm <- tidy_r %>%
-    count(title, word, sort = TRUE) %>%
-    cast_dfm(title, word, n)
-  r_dfm<-as.data.frame(r_dfm)
-  r_dfm<-r_dfm[,-1]
-  rapport_freq<-as.data.frame(sort(colSums(r_dfm),TRUE))
   nom<-str_c(deparse(substitute(rapport)),".csv")
-  write.csv(rapport_freq,nom)
+  write.csv(r_dfm,nom)
   
 }
 
@@ -209,6 +211,7 @@ matrice<-function(rapport)
 nettoyage<-function(nom){
   
   a<-read.csv(nom)
+  a<-a[,-1]
   colnames(a)<-c("title","count")
   
   a<-anti_join(a,mots,by="title")
