@@ -1,14 +1,13 @@
-library(stringr)
-library(rvest)
-library(ggplot2)
-library(ggrepel)
-library(dplyr)
-library(plyr)
-library(tm)
-library(stm)
-library(wordcloud)
 library(ggwordcloud)
+library(stringr)
+library(dplyr)
+library(ggplot2)
+library(rvest)
+library(stats)
 library(tidytext)
+library(utils)
+library(xml2)
+library(purrr)
 
 #####EXTRACTION D'UN RAPPORT DE RECHERCHE
 #La fonction d'extraction de rapport de recherche depuis gallica fonctionnant mal, nous reprenons ici une partie de l'outil gargallica qui exécute parfaitement cette tâche
