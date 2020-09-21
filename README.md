@@ -33,3 +33,4 @@ Un paramétrage des bornes chronologiques pour la période étudiée est possibl
 10 : Veillez à effectuer un dernier nettoyage manuel des matrices sur excel avant l'execution de la fonction d'affichage. Cela permettra d'éliminer les résidus, notamment les noms de ville et de pays, le nom recherché (qui ne doit pas apparaitre dans le graphe) et quelques éléments non filtrés.
 
 ![WC_réseau_1914_mondain_nettoye](https://user-images.githubusercontent.com/25954316/92419152-ec82a100-f16b-11ea-9910-f53ce9f73d97.png)
+![WC_réseau_periode_mondain_nettoye](https://user-images.githubusercontent.com/25954316/93771751-349acc80-fc1e-11ea-821f-8f6ecc576a32.png)
